@@ -1,0 +1,24 @@
+{
+  "name": "Open with StackEdit",
+  "version": "0.0",
+  "description": "An extension to edit currently opened web page with stackedit.io",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": {
+       "19": "icon-19.png"
+    },
+    "default_title": "Open with stackedit.io"
+  },
+  "background": {
+    "scripts": [
+      "background.js",
+      "vendor/html2markdown/html2markdown.js",
+      "vendor/html2markdown/htmldomparser.js"
+    ],
+    "persistent": false
+  }
+}
